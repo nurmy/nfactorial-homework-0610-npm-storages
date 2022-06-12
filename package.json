@@ -1,0 +1,12 @@
+{
+    "name": "hw5",
+    "version": "1.0.0",
+    "description": "",
+    "main": "madlibs.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pushToGit": "git add . && git commit -m 'Add hw5' && git push --all"
+    },
+    "author": "",
+    "license": "ISC"
+}

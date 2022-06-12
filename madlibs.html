@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mad Libs</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            defer
+        ></script>
+        <script src="madlibs.js" defer></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body d-flex flex-direction-column style="height: 100vh">
+        <nav class="navbar bg-light d-flex justify-content-space-between">
+            <div class="dropdown-center ms-4">
+                <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownCenterBtn"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Game
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                    <li>
+                        <a class="dropdown-item" href="./madlibs.html"
+                            >Mad Libs</a
+                        >
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="./tomthumb.html"
+                            >Tom Thumb</a
+                        >
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary ms-3" id="cookie">
+                    Set cookie
+                </button>
+            </div>
+            <div
+                class="form-check form-switch d-flex justify-content-center align-items-center me-4"
+            >
+                <input
+                    class="form-check-input ms-2"
+                    type="checkbox"
+                    role="switch"
+                    id="mode"
+                />
+                <label class="form-check-label" id="mode-label" for="mode"
+                    >Dark mode</label
+                >
+            </div>
+        </nav>
+        <div
+            class="container d-flex justify-content-center align-content-center flex-wrap"
+            id="main"
+        >
+            <h1 class="col-12">Mad Libs</h1>
+            <form class="row g-3 m-auto col-12 col-lg-6 mb-5" id="info">
+                <div>
+                    <label for="persName" class="form-label">Person name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="persName"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="charName" class="form-label">Character</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="charName"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="adverb" class="form-label">Adverb</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="adverb"
+                        placeholder="Quickly"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="adjective" class="form-label">Adjective</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="adjective"
+                        placeholder="Badass"
+                        required
+                    />
+                </div>
+                <div class="col-12 justify-content-center">
+                    <button type="submit" class="btn btn-primary" id="submit">
+                        Generate story
+                    </button>
+                    <button class="btn-secondary hidden" id="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <div
+                class="container hidden col-6 pb-5"
+                id="story"
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-grow-1
+            >
+                <h2></h2>
+            </div>
+        </div>
+    </body>
+</html>

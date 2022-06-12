@@ -1,0 +1,48 @@
+* {
+    transition: all 0.6s ease;
+}
+
+body {
+    transition: all 0.6s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    height: 8vh;
+    transition: all 0.6s ease;
+}
+
+#main {
+    height: 92vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: green;
+}
+
+#mode {
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#mode-label {
+    font-size: 18px;
+}
+
+/* label {
+    transition: all 0.6s ease;
+} */
+
+.dark {
+    background-color: #424242;
+    color: white;
+}
